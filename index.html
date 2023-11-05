@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)file:///D:/it411/game/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Game Board</title>
+    <script src="./index_files/jquery-3.3.1.js.download" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index_files/board.js.download"></script>
+    <script type="text/javascript" src="./index_files/scripts.js.download"></script>
+    <link rel="stylesheet" href="./index_files/styles.css">
+</head>
+<body>
+    <h1>Archaeology Board</h1>
+    <table id="board"><tr><th>&nbsp;</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr><tr><th>a</th><td class="square" id="cella1" style="color: green;">O</td><td class="square" id="cella2" style="color: green;">O</td><td class="square" id="cella3" style="color: green;">O</td><td class="square" id="cella4" style="color: green;">O</td><td class="square" id="cella5" style="color: green;">O</td><td class="square" id="cella6" ruin="Forum" dug="yes" style="color: red;">=</td><td class="square" id="cella7" style="color: green;">O</td><td class="square" id="cella8" style="color: green;">O</td></tr><tr><th>b</th><td class="square" id="cellb1">X<!-- td--></td><td class="square" id="cellb2" ruin="Palace">X<!-- td--></td><td class="square" id="cellb3" style="color: green;">O</td><td class="square" id="cellb4">X<!-- td--></td><td class="square" id="cellb5">X<!-- td--></td><td class="square" id="cellb6" ruin="Forum">X<!-- td--></td><td class="square" id="cellb7">X<!-- td--></td><td class="square" id="cellb8">X<!-- td--></td></tr><tr><th>c</th><td class="square" id="cellc1">X<!-- td--></td><td class="square" id="cellc2" ruin="Palace">X<!-- td--></td><td class="square" id="cellc3" ruin="Temple">X<!-- td--></td><td class="square" id="cellc4">X<!-- td--></td><td class="square" id="cellc5">X<!-- td--></td><td class="square" id="cellc6" ruin="Forum">X<!-- td--></td><td class="square" id="cellc7">X<!-- td--></td><td class="square" id="cellc8">X<!-- td--></td></tr><tr><th>d</th><td class="square" id="celld1">X<!-- td--></td><td class="square" id="celld2" ruin="Palace">X<!-- td--></td><td class="square" id="celld3" ruin="Temple">X<!-- td--></td><td class="square" id="celld4">X<!-- td--></td><td class="square" id="celld5">X<!-- td--></td><td class="square" id="celld6" ruin="Forum">X<!-- td--></td><td class="square" id="celld7">X<!-- td--></td><td class="square" id="celld8" ruin="Hut">X<!-- td--></td></tr><tr><th>e</th><td class="square" id="celle1">X<!-- td--></td><td class="square" id="celle2" ruin="Palace">X<!-- td--></td><td class="square" id="celle3" ruin="Temple">X<!-- td--></td><td class="square" id="celle4">X<!-- td--></td><td class="square" id="celle5" ruin="House">X<!-- td--></td><td class="square" id="celle6" ruin="House">X<!-- td--></td><td class="square" id="celle7" ruin="House">X<!-- td--></td><td class="square" id="celle8" ruin="Hut">X<!-- td--></td></tr><tr><th>f</th><td class="square" id="cellf1">X<!-- td--></td><td class="square" id="cellf2" ruin="Palace">X<!-- td--></td><td class="square" id="cellf3" ruin="Temple">X<!-- td--></td><td class="square" id="cellf4">X<!-- td--></td><td class="square" id="cellf5">X<!-- td--></td><td class="square" id="cellf6">X<!-- td--></td><td class="square" id="cellf7">X<!-- td--></td><td class="square" id="cellf8">X<!-- td--></td></tr><tr><th>g</th><td class="square" id="cellg1">X<!-- td--></td><td class="square" id="cellg2">X<!-- td--></td><td class="square" id="cellg3">X<!-- td--></td><td class="square" id="cellg4">X<!-- td--></td><td class="square" id="cellg5">X<!-- td--></td><td class="square" id="cellg6">X<!-- td--></td><td class="square" id="cellg7">X<!-- td--></td><td class="square" id="cellg8">X<!-- td--></td></tr><tr><th>h</th><td class="square" id="cellh1">X<!-- td--></td><td class="square" id="cellh2">X<!-- td--></td><td class="square" id="cellh3">X<!-- td--></td><td class="square" id="cellh4">X<!-- td--></td><td class="square" id="cellh5">X<!-- td--></td><td class="square" id="cellh6">X<!-- td--></td><td class="square" id="cellh7">X<!-- td--></td><td class="square" id="cellh8">X<!-- td--></td></tr></table>
+    
+    <!-- Add input fields for row and column coordinates and a "Dig" button -->
+    <div class="coord-input">
+        <label for="rowInput">Row:</label>
+        <input type="text" id="rowInput" placeholder="a">
+        <label for="colInput">Column:</label>
+        <input type="text" id="colInput" placeholder="1">
+        <button id="digButton">Dig</button>
+    </div>
+    
+    <!-- Add a section for outcome messages -->
+    <div class="outcome-messages">
+        <p id="outcomeMessage">Failure!</p>
+    </div>
+
+
+</body></html>
