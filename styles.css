@@ -1,0 +1,38 @@
+/* Styling for the game board */
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+
+  th, td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+  }
+
+  th {
+    background-color: #ccc;
+  }
+
+  /* Styling for dug cells */
+  .dug {
+    background-color: #ccc;
+    color: #000;
+  }
+
+  /* Styling for the input fields and button */
+  .coord-input {
+    text-align: center;
+  }
+
+  input {
+    width: 30px;
+  }
+
+  /* Styling for outcome messages */
+  .outcome-messages {
+    text-align: center;
+    margin-top: 20px;
+  } 
