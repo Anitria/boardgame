@@ -39,8 +39,7 @@ window.onload = function () {
       targetCell.innerHTML = '=';
       targetCell.style.color = 'red';
       successfulAttempts++;
-    }
-    else {
+    } else {
       // Display a failure message
       displayOutcomeMessage('Failure!');
       targetCell.innerHTML = 'O';
@@ -68,9 +67,11 @@ window.onload = function () {
     });
   }
 
-  // Initialize the board and attach the click event handler
-  const board = new GameBoard();
-  board.setBoard();
+  // Function to reset the game
+  function resetGame() {
+    // You can reset the game state here, e.g., by reloading the page
+    location.reload();
+  }
 
   // Attach the event handler to the "Dig" button
   attachDigHandler();
@@ -92,4 +93,7 @@ window.onload = function () {
 
   const cell = document.querySelector('#cellb3');
   tryDig(cell);
+
+  // Attach the resetGame function to the "Reset" button
+  document.getElementById("resetButton").addEventListener("click", resetGame);
 };
